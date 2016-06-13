@@ -34,7 +34,7 @@ rules: # http://eslint.org/docs/rules/
   no-empty-character-class: 2 # disallow empty character classes in regular expressions
   no-ex-assign: 2 # disallow reassigning exceptions in `catch` clauses
   no-extra-boolean-cast: 2 # disallow unnecessary boolean casts
-  no-extra-parens: [1, 'all', {returnAssign: false, nestedBinaryExpressions: false}] # disallow unnecessary parentheses
+  no-extra-parens: [0, 'all', {returnAssign: false, nestedBinaryExpressions: false}] # disallow unnecessary parentheses
   no-extra-semi: 2 # disallow unnecessary semicolons
   no-func-assign: 2 # disallow reassigning `function` declarations
   no-inner-declarations: [2, 'functions'] # disallow `function` or `var` declarations in nested blocks
@@ -87,7 +87,7 @@ rules: # http://eslint.org/docs/rules/
   no-lone-blocks: 1 # disallow unnecessary nested blocks
   no-loop-func: 1 # disallow `function` declarations and expressions inside loop statements
   no-magic-numbers: [0, {ignore: [0, 1, 24, 60]}] # disallow magic numbers
-  no-multi-spaces: 1 # disallow multiple spaces
+  no-multi-spaces: [0, {exceptions: {VariableDeclarator: true, Property: true}}] # disallow multiple spaces
   no-multi-str: 1 # disallow multiline strings
   no-native-reassign: 2 # disallow reassigning native objects
   # no-new: 1 # disallow new operators outside of assignments or comparisons
@@ -120,7 +120,7 @@ rules: # http://eslint.org/docs/rules/
   yoda: 0 # require or disallow “Yoda” conditions
 
   # Strict Mode
-  strict: 1 # require or disallow strict mode directives
+  strict: 0 # require or disallow strict mode directives
 
   # Variables
   init-declarations: 0 # require or disallow initialization in `var` declarations
@@ -161,7 +161,7 @@ rules: # http://eslint.org/docs/rules/
   func-names: 0 # enforce named `function` expressions
   func-style: 0 # enforce the consistent use of either `function` declarations or expressions
   id-blacklist: 0 # disallow specified identifiers
-  id-length: 1 # enforce minimum and maximum identifier lengths
+  id-length: [1, {exceptions: [_, $, i, j, k]}] # enforce minimum and maximum identifier lengths
   id-match: 0 # require identifiers to match a specified regular expression
   indent: [0, 2, {SwitchCase: 1, VariableDeclarator: {var: 2, let: 2, const: 3}}] # enforce consistent indentation
   jsx-quotes: [1, 'prefer-double'] # enforce the consistent use of either double or single quotes in JSX attributes
