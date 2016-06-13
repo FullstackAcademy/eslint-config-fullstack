@@ -1,0 +1,25 @@
+*~
+
+# installed packages
+node_modules
+bower_components
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Vim swap files
+*.sw?
+
+# IDE files
+.idea

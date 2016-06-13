@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-fullstack",
+  "version": "1.0.0",
+  "description": "a complete starter ESLint config file to help students avoid errors and learn best practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FullstackAcademy/eslint-config-fullstack.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslintrc",
+    "linter",
+    "lint",
+    "fullstack",
+    "gracehopper",
+    "academy",
+    "fsa",
+    "fs",
+    "gha",
+    "gh",
+    "educational"
+  ],
+  "author": "Gabriel Lebec <glebec@gmail.com> (https://github.com/glebec)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FullstackAcademy/eslint-config-fullstack/issues"
+  },
+  "homepage": "https://github.com/FullstackAcademy/eslint-config-fullstack#readme",
+  "dependencies": {
+    "yamljs": "~0.2.7"
+  }
+}
