@@ -1,5 +1,7 @@
 [![Built at Fullstack Academy](https://img.shields.io/badge/built%20at-Fullstack%20Academy-green.svg)](http://www.fullstackacademy.com)
 
+![ESLint-Fullstack logo](https://learndotresources.s3.amazonaws.com/workshop/570bdee44a306c0300b78b52/eslint-fullstack.jpg)
+
 # `eslint-config-fullstack`
 
 ### An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for [Fullstack Education Group](http://www.fullstackacademy.com/) Students
@@ -26,11 +28,11 @@ Note that the `eslint-config-` portion of the module name is assumed by ESLint.
 
 ### Local
 
-A specific project can extend this definition by including `eslint-config-fullstack` as a saved dependency, and a local `eslintrc.json` which `{ "extends": "fullstack" }`.
+A specific project can extend this definition by including `eslint-config-fullstack` as a saved dependency, and a local `.eslintrc.json` which `{ "extends": "fullstack" }`.
 
 ## Extending
 
-Any [rules](http://eslint.org/docs/rules/) added to your global or local `eslintrc.json` files will override the rules defined by this package. For example:
+Any [rules](http://eslint.org/docs/rules/) added to your global or local `.eslintrc.json` files will override the rules defined by this package. For example:
 
 ```json
 {
