@@ -1,5 +1,5 @@
-[![npm version](https://img.shields.io/npm/v/eslint-config-fullstack.svg?maxAge=3600)](https://www.npmjs.com/package/send-seekable)
-[![Codeship](https://img.shields.io/codeship/4ae0bfb0-1c07-0134-222f-22fb94432a98.svg)](https://codeship.com/projects/154589)
+[![npm version](https://img.shields.io/npm/v/eslint-config-fullstack.svg?maxAge=3600)](https://www.npmjs.com/package/eslint-config-fullstack)
+[![Codeship](https://img.shields.io/codeship/4ae0bfb0-1c07-0134-222f-22fb94432a98.svg)](https://codeship.com/projects/159804)
 [![Greenkeeper.io is keeping this repo's dependencies up to date](https://img.shields.io/badge/greenkeeper.io-monitoring-brightgreen.svg?maxAge=3600)](https://greenkeeper.io/)
 [![Built at Fullstack Academy](https://img.shields.io/badge/built%20at-Fullstack%20Academy-green.svg)](http://www.fullstackacademy.com)
 
