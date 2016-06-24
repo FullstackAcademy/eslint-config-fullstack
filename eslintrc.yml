@@ -8,6 +8,7 @@
 extends: eslint:recommended # overridden below unless new recommended rules are added before this doc is updated
 
 env:
+  es6: true
   browser: true
   node: true
   mocha: true
