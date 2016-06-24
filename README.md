@@ -3,7 +3,7 @@
 [![Greenkeeper.io is keeping this repo's dependencies up to date](https://img.shields.io/badge/greenkeeper.io-monitoring-brightgreen.svg?maxAge=3600)](https://greenkeeper.io/)
 [![Built at Fullstack Academy](https://img.shields.io/badge/built%20at-Fullstack%20Academy-green.svg)](http://www.fullstackacademy.com)
 
-![ESLint-Fullstack logo](https://learndotresources.s3.amazonaws.com/workshop/570bdee44a306c0300b78b52/eslint-fullstack.jpg)
+<img src="https://learndotresources.s3.amazonaws.com/workshop/570bdee44a306c0300b78b52/eslint-fullstack.jpg" align="right">
 
 # `eslint-config-fullstack`
 
