@@ -22,15 +22,15 @@ describe('eslint-config-fullstack', function () {
   });
 
   it('works with eslint', function () {
-    var messsages = linter.verify('var x = 1;', eConfigFs);
-    expect(messsages).to.be.an('array');
-    if (messsages[0]) expect(messsages[0].fatal).not.to.be.true;
+    var messages = linter.verify('var x = 1;', eConfigFs);
+    expect(messages).to.be.an('array');
+    if (messages[0]) expect(messages[0].fatal).not.to.be.true;
   });
 
   it('has a parsing error for invalid source', function () {
-    var messsages = linter.verify('if;', eConfigFs);
-    expect(messsages).to.be.an('array');
-    expect(messsages[0].fatal).to.be.true;
+    var messages = linter.verify('if;', eConfigFs);
+    expect(messages).to.be.an('array');
+    expect(messages[0].fatal).to.be.true;
   });
 
 });
