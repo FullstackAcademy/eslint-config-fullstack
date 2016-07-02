@@ -3,8 +3,6 @@
 # See http://eslint.org/docs/developer-guide/shareable-configs
 # Authored by Gabriel Lebec, 2016
 
-# ESLint version ~2.13.1
-
 extends: eslint:recommended # overridden below unless new recommended rules are added before this doc is updated
 
 env:
