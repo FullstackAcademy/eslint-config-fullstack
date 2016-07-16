@@ -99,7 +99,7 @@ rules: # http://eslint.org/docs/rules/
   no-proto: 2 # disallow the use of the `__proto__` property
   no-redeclare: [1, {builtinGlobals: true}] # disallow `var` redeclaration
   no-return-assign: [1, 'always'] # disallow assignment operators in `return` statements
-  no-script-url: 2 # disallow `javascript:` urls
+  no-script-url: 2 # disallow `javascript` urls
   no-self-assign: 2 # disallow assignments where both sides are exactly the same
   no-self-compare: 2 # disallow comparisons where both sides are exactly the same
   no-sequences: 1 # disallow comma operators
@@ -136,7 +136,7 @@ rules: # http://eslint.org/docs/rules/
   no-use-before-define: [1, 'nofunc'] # disallow the use of variables before they are defined
 
   # Node.js and CommonJS
-  callback-return: 1 # require `return` statements after callbacks
+  callback-return: 0 # require `return` statements after callbacks
   global-require: 1 # require `require()` calls to be placed at top-level module scope
   handle-callback-err: [2, '^(err|error|.+Error$)'] # require error handling in max-nested-callbacks
   no-mixed-requires: 1 # disallow `require` calls to be mixed with regular `var` declarations
@@ -164,7 +164,7 @@ rules: # http://eslint.org/docs/rules/
   id-match: 0 # require identifiers to match a specified regular expression
   indent: [0, 2, {SwitchCase: 1, VariableDeclarator: {var: 2, let: 2, const: 3}}] # enforce consistent indentation
   jsx-quotes: [1, 'prefer-double'] # enforce the consistent use of either double or single quotes in JSX attributes
-  key-spacing: [0, {align: 'value'}] # enforce consistent spacing between keys and values in object literal properties
+  key-spacing: [1, {mode: 'minimum'}] # enforce consistent spacing between keys and values in object literal properties
   keyword-spacing: 1 # enforce consistent spacing before and after keywords
   linebreak-style: 1 # enforce consistent linebreak style
   lines-around-comment: 0 # require empty lines around comments
