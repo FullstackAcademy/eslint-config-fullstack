@@ -44,9 +44,11 @@ rules: # http://eslint.org/docs/rules/
   no-prototype-builtins: 0 # Disallow use of `Object.prototypes` builtins directly
   no-regex-spaces: 2 # disallow multiple spaces in regular expression literals
   no-sparse-arrays: 2 # disallow sparse arrays
+  no-template-curly-in-string: 1 # disallow template literal placeholder syntax in regular strings
   no-unexpected-multiline: 2 # disallow confusing multiline expressions
   no-unreachable: 2 # disallow unreachable code after `return`, `throw`, `continue`, and `break` statements
   no-unsafe-finally: 1 # disallow control flow statements in `finally` blocks
+  no-unsafe-negation: 2 # disallow negating the left operand of relational operators
   use-isnan: 2 # require calls to `isNaN()` when checking for NaN
   valid-jsdoc: 0 # enforce valid JSDoc comments
   valid-typeof: 2 # enforce comparing `typeof` expressions against valid strings
@@ -77,6 +79,7 @@ rules: # http://eslint.org/docs/rules/
   no-extra-label: 1 # disallow unnecessary labels
   no-fallthrough: 1 # disallow fallthrough of `case` statements
   no-floating-decimal: 1 # disallow leading or trailing decimal points in numeric literals
+  no-global-assign: 1 # disallow assignments to native objects or read-only global variables
   no-implicit-coercion: 0 # disallow shorthand type conversions
   no-implicit-globals: 0 # disallow `var` and named `function` declarations in the global scope
   no-implied-eval: 1 # disallow the use of `eval()`-like methods
@@ -100,7 +103,7 @@ rules: # http://eslint.org/docs/rules/
   no-redeclare: [1, {builtinGlobals: true}] # disallow `var` redeclaration
   no-return-assign: [1, 'always'] # disallow assignment operators in `return` statements
   no-script-url: 2 # disallow `javascript` urls
-  no-self-assign: 2 # disallow assignments where both sides are exactly the same
+  no-self-assign: [2, {props: true}] # disallow assignments where both sides are exactly the same
   no-self-compare: 2 # disallow comparisons where both sides are exactly the same
   no-sequences: 1 # disallow comma operators
   no-throw-literal: 1 # disallow throwing literals as exceptions
@@ -157,6 +160,7 @@ rules: # http://eslint.org/docs/rules/
   computed-property-spacing: 0 # enforce consistent spacing inside computed property brackets
   consistent-this: 0 # enforce consistent naming when capturing the current execution context
   eol-last: 1 # enforce at least one newline at the end of files
+  func-call-spacing: 1 # require or disallow spacing between `function` identifiers and their invocations
   func-names: 0 # enforce named `function` expressions
   func-style: 0 # enforce the consistent use of either `function` declarations or expressions
   id-blacklist: 0 # disallow specified identifiers
@@ -213,6 +217,7 @@ rules: # http://eslint.org/docs/rules/
   require-jsdoc: 0 # require JSDoc comments
   semi: [0, 'always'] # require or disallow semicolons instead of ASI
   semi-spacing: 0 # enforce consistent spacing before and after semicolons
+  sort-keys: 0 # requires object keys to be sorted
   sort-vars: 0 # require variables within the same declaration block to be sorted
   space-before-blocks: 0 # enforce consistent spacing before blocks
   space-before-function-paren: 0 # enforce consistent spacing before `function` definition opening parenthesis
