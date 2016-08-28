@@ -57,6 +57,7 @@ rules: # http://eslint.org/docs/rules/
   accessor-pairs: 2 # enforce getter and setter pairs in objects
   array-callback-return: 0 # enforce `return` statements in callbacks of array methods
   block-scoped-var: 0 # enforce the use of variables within the scope they are defined
+  class-methods-use-this: 1 # enforce that class methods utilize `this`
   complexity: [1, {max: 8}] # enforce a maximum cyclomatic complexity allowed in a program
   consistent-return: 0 # require return statements to either always or never specify values
   curly: [1, 'multi-line', 'consistent'] # enforce consistent brace style for all control statements
@@ -118,7 +119,7 @@ rules: # http://eslint.org/docs/rules/
   no-with: 2 # disallow `with` statements
   radix: 1 # enforce the consistent use of the radix argument when using `parseInt()`
   vars-on-top: 0 # require `var` declarations be placed at the top of their containing scope
-  wrap-iife: 1 # require parentheses around immediate function invocations
+  wrap-iife: [1, 'any'] # require parentheses around immediate function invocations
   yoda: 0 # require or disallow “Yoda” conditions
 
   # Strict Mode
@@ -140,7 +141,7 @@ rules: # http://eslint.org/docs/rules/
 
   # Node.js and CommonJS
   callback-return: 0 # require `return` statements after callbacks
-  global-require: 1 # require `require()` calls to be placed at top-level module scope
+  global-require: 0 # require `require()` calls to be placed at top-level module scope
   handle-callback-err: [2, '^(err|error|.+Error$)'] # require error handling in max-nested-callbacks
   no-mixed-requires: 1 # disallow `require` calls to be mixed with regular `var` declarations
   no-new-require: 1 # disallow `new` operators with calls to `require`
@@ -212,7 +213,7 @@ rules: # http://eslint.org/docs/rules/
   operator-assignment: 0 # require or disallow assignment operator shorthand where possible
   operator-linebreak: 0 # enforce consistent linebreak style for operators
   padded-blocks: 0 # require or disallow padding within blocks
-  quote-props: [2, 'as-needed'] # require quotes around object literal property names
+  quote-props: [1, 'as-needed'] # require quotes around object literal property names
   quotes: [1, 'single', {avoidEscape: true, allowTemplateLiterals: true}] # enforce the consistent use of either backticks, double, or single quotes
   require-jsdoc: 0 # require JSDoc comments
   semi: [0, 'always'] # require or disallow semicolons instead of ASI
@@ -255,5 +256,6 @@ rules: # http://eslint.org/docs/rules/
   prefer-template: 0 # require template literals instead of string concatenation
   require-yield: 2 # require generator functions to contain `yield`
   sort-imports: 0 # enforce sorted import declarations within modules
+  symbol-description: 1 # require symbol descriptions
   template-curly-spacing: 0 # require or disallow spacing around embedded expressions of template strings
   yield-star-spacing: 1 # require or disallow spacing around the `*` in `yield*` expressions
