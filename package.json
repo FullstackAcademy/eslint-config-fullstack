@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-fullstack",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "a complete starter ESLint config file to help students avoid errors and learn best practices",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint": "~3.4.0",
+    "eslint": "~3.6.1",
     "mocha": "^3.0.0"
   }
 }
