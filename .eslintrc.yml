@@ -102,6 +102,7 @@ rules: # http://eslint.org/docs/rules/
   no-param-reassign: 0 # disallow reassigning `function` parameters
   no-proto: 2 # disallow the use of the `__proto__` property
   no-redeclare: [1, {builtinGlobals: true}] # disallow `var` redeclaration
+  no-restricted-properties: 0 # disallow certain properties on certain objects
   no-return-assign: [1, 'always'] # disallow assignment operators in `return` statements
   no-script-url: 2 # disallow `javascript` urls
   no-self-assign: [2, {props: true}] # disallow assignments where both sides are exactly the same
@@ -171,10 +172,12 @@ rules: # http://eslint.org/docs/rules/
   jsx-quotes: [1, 'prefer-double'] # enforce the consistent use of either double or single quotes in JSX attributes
   key-spacing: [1, {mode: 'minimum'}] # enforce consistent spacing between keys and values in object literal properties
   keyword-spacing: 1 # enforce consistent spacing before and after keywords
+  line-comment-position: 0 # enforce position of line comments
   linebreak-style: 1 # enforce consistent linebreak style
   lines-around-comment: 0 # require empty lines around comments
+  lines-around-directive: 0 # require or disallow newlines around directives
   max-depth: [1, {max: 6}] # enforce a maximum depth that blocks can be nested
-  max-len: [0, 100] # enforce a maximum line length
+  max-len: [0, {code: 100, ignoreStrings: true, ignoreTemplateLiterals: true}] # enforce a maximum line length
   max-lines: [0, {max: 300}] # enforce a maximum file length
   max-nested-callbacks: [1, {max: 6}] # enforce a maximum depth that callbacks can be nested
   max-params: [1, {max: 6}] # enforce a maximum number of parameters in `function` definitions
@@ -250,6 +253,7 @@ rules: # http://eslint.org/docs/rules/
   object-shorthand: 0 # require or disallow method and property shorthand syntax for object literals
   prefer-arrow-callback: 0 # require arrow functions as callbacks
   prefer-const: 0 # require `const` declarations for variables that are never reassigned after declared
+  prefer-numeric-literals: 0 # disallow `parseInt()` in favor of binary, octal, and hexadecimal literals
   prefer-reflect: 0 # require `Reflect` methods where applicable
   prefer-rest-params: 0 # require rest parameters instead of arguments
   prefer-spread: 0 # require spread operators instead of `.apply()`
