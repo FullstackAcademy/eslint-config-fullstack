@@ -115,6 +115,7 @@ rules: # http://eslint.org/docs/rules/
   no-useless-call: 1 # disallow unnecessary calls to `.call()` and `.apply()`
   no-useless-concat: 1 # disallow unnecessary concatenation of literals or template literals
   no-useless-escape: 1 # disallow unnecessary escape characters
+  no-useless-return: 1 # disallow redundant return statements
   no-void: 1 # disallow `void` operators
   no-warning-comments: 1 # disallow specified warning terms in comments
   no-with: 2 # disallow `with` statements
@@ -163,6 +164,7 @@ rules: # http://eslint.org/docs/rules/
   consistent-this: 0 # enforce consistent naming when capturing the current execution context
   eol-last: 1 # enforce at least one newline at the end of files
   func-call-spacing: 1 # require or disallow spacing between `function` identifiers and their invocations
+  func-name-matching: 1 # require function names to match the name of the variable or property to which they are assigned
   func-names: 0 # enforce named `function` expressions
   func-style: 0 # enforce the consistent use of either `function` declarations or expressions
   id-blacklist: 0 # disallow specified identifiers
