@@ -48,6 +48,22 @@ Any [rules](http://eslint.org/docs/rules/) added to your global or local `.eslin
 
 This turns on enforcing the use of semicolons, a rule which is silenced by default in the current version of the `eslint-config-fullstack` package.
 
+## React / JSX
+
+With version 2, `eslint-config-fullstack` now has preliminary support for React/JSX projects. Note that you must manually install the peer dependency `eslint-plugin-react`:
+
+```sh
+npm install --save eslint-plugin-react
+```
+
+Then change your `.eslintrc.json` to extend the react sub-config:
+
+```json
+{
+  "extends": "fullstack/react"
+}
+```
+
 ## Background
 
 The [ESLint](http://http://eslint.org/) linting system is a popular one for its support of ES6 syntax, pluggable [rules](http://eslint.org/docs/rules/), automatic rule names in warning messages, and [shareable](http://eslint.org/docs/developer-guide/shareable-configs) / [extendable](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) config files.
