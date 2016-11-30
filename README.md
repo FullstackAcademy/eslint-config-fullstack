@@ -50,10 +50,10 @@ This turns on enforcing the use of semicolons, a rule which is silenced by defau
 
 ## React / JSX
 
-With version 2, `eslint-config-fullstack` now has preliminary support for React/JSX projects. Note that you must manually install the peer dependency `eslint-plugin-react`:
+With version 2, `eslint-config-fullstack` now has preliminary support for React/JSX projects. Note that you must manually install the additional peer dependency `eslint-plugin-react`:
 
 ```sh
-npm install --save eslint-plugin-react
+npm install -g eslint-plugin-react
 ```
 
 Then change your `.eslintrc.json` to extend the react sub-config:
