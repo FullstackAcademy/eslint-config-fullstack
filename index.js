@@ -1,5 +1,4 @@
 'use strict';
-var YAML = require('yamljs');
-var path = require('path');
+var base = require('./.eslintrc.js');
 
-module.exports = YAML.load(path.join(__dirname, '.eslintrc.yml'));
+module.exports = base;
