@@ -111,6 +111,7 @@ module.exports = {
     'no-redeclare': [1, {builtinGlobals: true}], // disallow `var` redeclaration
     'no-restricted-properties': 0, // disallow certain properties on certain objects
     'no-return-assign': [1, 'always'], // disallow assignment operators in `return` statements
+    'no-return-await': 1, // disallow unnecessary `return await`
     'no-script-url': 2, // disallow `javascript` urls
     'no-self-assign': [2, {props: true}], // disallow assignments where both sides are exactly the same
     'no-self-compare': 2, // disallow comparisons where both sides are exactly the same
@@ -127,6 +128,7 @@ module.exports = {
     'no-warning-comments': 1, // disallow specified warning terms in comments
     'no-with': 2, // disallow `with` statements
     'radix': 1, // enforce the consistent use of the radix argument when using `parseInt()`
+    'require-await': 1, // disallow async functions which have no `await` expression
     'vars-on-top': 0, // require `var` declarations be placed at the top of their containing scope
     'wrap-iife': [1, 'any'], // require parentheses around immediate function invocations
     'yoda': 0, // require or disallow “Yoda” conditions
@@ -165,6 +167,7 @@ module.exports = {
     'block-spacing': 0, // enforce consistent spacing inside single-line blocks
     'brace-style': 0, // enforce consistent brace style for blocks
     'camelcase': 1, // enforce camelcase naming convention
+    'capitalized-comments': 0, // enforce or disallow capitalization of the first letter of a comment
     'comma-dangle': [2, 'only-multiline'], // require or disallow trailing commas
     'comma-spacing': 1, // enforce consistent spacing before and after commas
     'comma-style': 0, // enforce consistent comma style
