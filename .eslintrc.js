@@ -28,7 +28,7 @@ module.exports = {
   rules: { // http://eslint.org/docs/rules/
 
     // Possible Errors
-    'comma-dangle': [2, 'only-multiline'], // require or disallow trailing commas
+    'no-await-in-loop': 0, // disallow `await` inside of loops
     'no-cond-assign': 2, // disallow assignment operators in conditional expressions
     'no-console': 0, // disallow the use of `console`
     'no-constant-condition': 2, // disallow constant expressions in conditions
@@ -165,6 +165,7 @@ module.exports = {
     'block-spacing': 0, // enforce consistent spacing inside single-line blocks
     'brace-style': 0, // enforce consistent brace style for blocks
     'camelcase': 1, // enforce camelcase naming convention
+    'comma-dangle': [2, 'only-multiline'], // require or disallow trailing commas
     'comma-spacing': 1, // enforce consistent spacing before and after commas
     'comma-style': 0, // enforce consistent comma style
     'computed-property-spacing': 0, // enforce consistent spacing inside computed property brackets
