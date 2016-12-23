@@ -13,10 +13,10 @@
 
 ### Global
 
-Global installation is recommended for [Fullstack Education Group](http://www.fullstackacademy.com/) students:
+Global installation is recommended for [Fullstack Education Group](http://www.fullstackacademy.com/) students. To install or upgrade the config along with its peer dependencies:
 
 ```sh
-npm install -g eslint-config-fullstack
+npm install -g eslint eslint-config-fullstack eslint-plugin-react
 ```
 
 In your global `~/.eslintrc.json` file:
@@ -31,7 +31,7 @@ Note that the `eslint-config-` portion of the module name is assumed by ESLint.
 
 ### Local
 
-A specific project can extend this definition by including `eslint-config-fullstack` as a saved dependency, and a local `.eslintrc.json` which `{ "extends": "fullstack" }`.
+A specific project can extend this definition by including `eslint eslint-config-fullstack eslint-plugin-react` as saved dev-dependencies, and a local `.eslintrc.json` which `{ "extends": "fullstack" }`.
 
 ## Extending
 
@@ -47,22 +47,6 @@ Any [rules](http://eslint.org/docs/rules/) added to your global or local `.eslin
 ```
 
 This turns on enforcing the use of semicolons, a rule which is silenced by default in the current version of the `eslint-config-fullstack` package.
-
-## React / JSX
-
-With version 2, `eslint-config-fullstack` now has preliminary support for React/JSX projects. Note that you must manually install the additional peer dependency `eslint-plugin-react`:
-
-```sh
-npm install -g eslint-plugin-react
-```
-
-Then change your `.eslintrc.json` to extend the react sub-config:
-
-```json
-{
-  "extends": "fullstack/react"
-}
-```
 
 ## Background
 

@@ -17,14 +17,6 @@ describe('eslint-config-fullstack', function () {
     expect(eConfigFs).to.be.an('object');
   });
 
-  it('extends the recommended ESLint config', function () {
-    expect(eConfigFs.extends).to.equal('eslint:recommended');
-  });
-
-  it('has a `rules` property', function () {
-    expect(eConfigFs).to.include.keys('rules');
-  });
-
   it('works with eslint', function () {
     var report = cli.executeOnText('var x = 1;');
     expect(report.errorCount).to.equal(0);
