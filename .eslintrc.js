@@ -252,7 +252,7 @@ module.exports = {
     'constructor-super': 2, // require `super()` calls in constructors
     'generator-star-spacing': 1, // enforce consistent spacing around `*` operators in generator functions
     'no-class-assign': 1, // disallow reassigning class members
-    'no-confusing-arrow': 1, // disallow arrow functions where they could be confused with comparisons
+    'no-confusing-arrow': [1, {allowParens: true}], // disallow arrow functions where they could be confused with comparisons
     'no-const-assign': 2, // disallow reassigning `const` variables
     'no-dupe-class-members': 0, // disallow duplicate class members
     'no-duplicate-imports': 1, // disallow duplicate module imports
