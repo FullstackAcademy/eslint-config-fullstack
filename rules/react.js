@@ -47,7 +47,7 @@ module.exports = {
     'react/no-unused-prop-types': 1, // Prevent definitions of unused prop types
     'react/prefer-es6-class': 0, // Enforce ES5 or ES6 class for React Components
     'react/prefer-stateless-function': 1, // Enforce stateless React Components to be written as a pure function
-    'react/prop-types': 0, // Prevent missing props validation in a React component definition
+    'react/prop-types': 1, // Prevent missing props validation in a React component definition
     'react/react-in-jsx-scope': 1, // Prevent missing React when using JSX,
     'react/require-default-props': 1, // Enforce a defaultProps definition for every prop that is not a required prop
     'react/require-optimization': 0, // Enforce React components to have a shouldComponentUpdate method
