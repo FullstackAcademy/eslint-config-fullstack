@@ -244,6 +244,7 @@ module.exports = {
     'object-shorthand': 0, // require or disallow method and property shorthand syntax for object literals
     'prefer-arrow-callback': 0, // require arrow functions as callbacks
     'prefer-const': 0, // require `const` declarations for variables that are never reassigned after declared
+    'prefer-destructuring': 0, // require destructuring from arrays and/or objects
     'prefer-numeric-literals': 0, // disallow `parseInt()` in favor of binary, octal, and hexadecimal literals
     'prefer-reflect': 0, // require `Reflect` methods where applicable
     'prefer-rest-params': 0, // require rest parameters instead of arguments
