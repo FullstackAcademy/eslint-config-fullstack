@@ -105,6 +105,7 @@ module.exports = {
     'no-void': 1, // disallow `void` operators
     'no-warning-comments': 1, // disallow specified warning terms in comments
     'no-with': 2, // disallow `with` statements
+    'prefer-promise-reject-errors': 1, // require using Error objects as Promise rejection reasons
     'radix': 1, // enforce the consistent use of the radix argument when using `parseInt()`
     'require-await': 1, // disallow async functions which have no `await` expression
     'vars-on-top': 0, // require `var` declarations be placed at the top of their containing scope
@@ -186,6 +187,7 @@ module.exports = {
     'no-lonely-if': 1, // disallow `if` statements as the only statement in `else` blocks
     'no-mixed-operators': 0, // disallow mixes of different operators
     'no-mixed-spaces-and-tabs': [1, 'smart-tabs'], // disallow mixed spaces and tabs for indentation
+    'no-multi-assign': 0, // disallow use of chained assignment expressions
     'no-multiple-empty-lines': [1, {max: 2, maxEOF: 1}], // disallow multiple empty lines
     'no-negated-condition': 0, // disallow negated conditions
     'no-nested-ternary': 1, // disallow nested ternary expressions
@@ -220,6 +222,7 @@ module.exports = {
     'space-infix-ops': 1, // require spacing around operators
     'space-unary-ops': 1, // enforce consistent spacing before or after unary operators
     'spaced-comment': 0, // enforce consistent spacing after the `//` or `/*` in a comment
+    'template-tag-spacing': 0, // require or disallow spacing between template tags and their literals
     'unicode-bom': 0, // require or disallow the Unicode BOM
     'wrap-regex': 0, // require parenthesis around regex literals
 
