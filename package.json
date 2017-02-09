@@ -1,44 +1,44 @@
 {
-	"name": "eslint-config-fullstack",
-	"version": "2.6.0",
-	"description": "a complete starter ESLint config file to help students avoid errors and learn best practices",
-	"main": "index.js",
-	"scripts": {
-		"test": "mocha"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/FullstackAcademy/eslint-config-fullstack.git"
-	},
-	"keywords": [
-		"eslint",
-		"eslintconfig",
-		"eslintrc",
-		"linter",
-		"lint",
-		"fullstack",
-		"gracehopper",
-		"academy",
-		"fsa",
-		"fs",
-		"gha",
-		"gh",
-		"educational"
-	],
-	"author": "Gabriel Lebec <glebec@gmail.com> (https://github.com/glebec)",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/FullstackAcademy/eslint-config-fullstack/issues"
-	},
-	"homepage": "https://github.com/FullstackAcademy/eslint-config-fullstack#readme",
-	"devDependencies": {
-		"chai": "^3.5.0",
-		"eslint": "~3.15.0",
-		"eslint-plugin-react": "~6.9.0",
-		"mocha": "^3.0.0"
-	},
-	"peerDependencies": {
-		"eslint": ">=3.12.1",
-		"eslint-plugin-react": ">=6.8.0"
-	}
+  "name": "eslint-config-fullstack",
+  "version": "2.7.0",
+  "description": "a complete starter ESLint config file to help students avoid errors and learn best practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FullstackAcademy/eslint-config-fullstack.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslintrc",
+    "linter",
+    "lint",
+    "fullstack",
+    "gracehopper",
+    "academy",
+    "fsa",
+    "fs",
+    "gha",
+    "gh",
+    "educational"
+  ],
+  "author": "Gabriel Lebec <glebec@gmail.com> (https://github.com/glebec)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FullstackAcademy/eslint-config-fullstack/issues"
+  },
+  "homepage": "https://github.com/FullstackAcademy/eslint-config-fullstack#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "~3.15.0",
+    "eslint-plugin-react": "~6.9.0",
+    "mocha": "^3.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=3.12.1",
+    "eslint-plugin-react": ">=6.8.0"
+  }
 }
