@@ -9,26 +9,26 @@
 
 module.exports = {
 
-  extends: [
-    './rules/base',
-    './rules/react'
-  ].map(require.resolve),
+	extends: [
+		'./rules/base',
+		'./rules/react'
+	].map(require.resolve),
 
-  env: {
-    es6: true,
-    browser: true,
-    node: true,
-    mocha: true,
-    jasmine: true,
-    jquery: true,
-  },
+	env: {
+		es6: true,
+		browser: true,
+		node: true,
+		mocha: true,
+		jasmine: true,
+		jquery: true,
+	},
 
-  parserOptions: {
-    ecmaVersion: 6
-  },
+	parserOptions: {
+		ecmaVersion: 6
+	},
 
-  globals: {
-    angular: true
-  }
+	globals: {
+		angular: true
+	}
 
 };
