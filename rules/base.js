@@ -126,7 +126,7 @@ module.exports = {
 		'no-undef': 1, // disallow the use of undeclared variables unless mentioned in `/*global */` comments
 		'no-undef-init': 0, // disallow initializing variables to `undefined`
 		'no-undefined': 0, // disallow the use of `undefined` as an identifier
-		'no-unused-vars': [1, {argsIgnorePattern: 'next'}], // disallow unused variables
+		'no-unused-vars': [1, {argsIgnorePattern: '^(next|_)$'}], // disallow unused variables
 		'no-use-before-define': [1, 'nofunc'], // disallow the use of variables before they are defined
 
 		// Node.js and CommonJS
