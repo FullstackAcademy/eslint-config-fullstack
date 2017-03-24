@@ -27,7 +27,9 @@ module.exports = {
 
 		'react/display-name': 1, // Prevent missing displayName in a React component definition
 		'react/forbid-component-props': 0, // Forbid certain props on Components
+		'forbid-elements': 0, // Forbid certain elements
 		'react/forbid-prop-types': 0, // Forbid certain propTypes
+		'forbid-foreign-prop-types': 0, // Forbid foreign propTypes
 		'react/no-array-index-key': 1, // Prevent using Array index in `key` props
 		'react/no-children-prop': 1, // Prevent passing children as props
 		'react/no-danger': 1, // Prevent usage of dangerous JSX properties
@@ -45,17 +47,18 @@ module.exports = {
 		'react/no-unescaped-entities': 0, // Prevent invalid characters from appearing in markup
 		'react/no-unknown-property': 1, // Prevent usage of unknown DOM property (fixable)
 		'react/no-unused-prop-types': 1, // Prevent definitions of unused prop types
-		'react/prefer-es6-class': 0, // Enforce ES5 or ES6 class for React Components
+		'react/prefer-es6-class': 1, // Enforce ES5 or ES6 class for React Components
 		'react/prefer-stateless-function': 1, // Enforce stateless React Components to be written as a pure function
-		'react/prop-types': 1, // Prevent missing props validation in a React component definition
+		'react/prop-types': 0, // Prevent missing props validation in a React component definition
 		'react/react-in-jsx-scope': 1, // Prevent missing React when using JSX,
-		'react/require-default-props': 1, // Enforce a defaultProps definition for every prop that is not a required prop
+		'react/require-default-props': 0, // Enforce a defaultProps definition for every prop that is not a required prop
 		'react/require-optimization': 0, // Enforce React components to have a shouldComponentUpdate method
 		'react/require-render-return': 1, // Enforce ES5 or ES6 class for returning value in render function
 		'react/self-closing-comp': 1, // Prevent extra closing tags for components without children (fixable)
 		'react/sort-comp': 0, // Enforce component methods order
 		'react/sort-prop-types': 0, // Enforce propTypes declarations alphabetical sorting
 		'react/style-prop-object': 1, // Enforce style prop value being an object
+		'void-dom-elements-no-children': 1, // Prevent void DOM elements (e.g. `<img />`, `<br />`) from receiving children
 
 		// JSX-specific rules
 
