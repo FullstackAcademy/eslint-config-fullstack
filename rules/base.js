@@ -7,6 +7,7 @@ module.exports = {
 
 		// Possible Errors
 		'no-await-in-loop': 0, // disallow `await` inside of loops
+		'no-compare-neg-zero': 1, // disallow comparing against -0
 		'no-cond-assign': 2, // disallow assignment operators in conditional expressions
 		'no-console': 0, // disallow the use of `console`
 		'no-constant-condition': 2, // disallow constant expressions in conditions
@@ -96,7 +97,7 @@ module.exports = {
 		'no-sequences': 1, // disallow comma operators
 		'no-throw-literal': 1, // disallow throwing literals as exceptions
 		'no-unmodified-loop-condition': 1, // disallow unmodified loop conditions
-		'no-unused-expressions': 2, // disallow unused expressions
+		'no-unused-expressions': [2, {allowTaggedTemplates: true, allowShortCircuit: true, allowTernary: true}], // disallow unused expressions
 		'no-unused-labels': 2, // disallow unused labels
 		'no-useless-call': 1, // disallow unnecessary calls to `.call()` and `.apply()`
 		'no-useless-concat': 1, // disallow unnecessary concatenation of literals or template literals
@@ -201,6 +202,7 @@ module.exports = {
 		'no-underscore-dangle': 0, // disallow dangling underscores in identifiers
 		'no-unneeded-ternary': 1, // disallow ternary operators when simpler alternatives exist
 		'no-whitespace-before-property': 1, // disallow whitespace before properties
+		'nonblock-statement-body-position': 1, // enforce the location of single-line statements
 		'object-curly-newline': 0, // enforce consistent line breaks inside braces
 		'object-curly-spacing': 0, // enforce consistent spacing inside braces
 		'object-property-newline': 0, // enforce placing object properties on separate lines
