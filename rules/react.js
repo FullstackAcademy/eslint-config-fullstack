@@ -27,9 +27,9 @@ module.exports = {
 
 		'react/display-name': 1, // Prevent missing displayName in a React component definition
 		'react/forbid-component-props': 0, // Forbid certain props on Components
-		'forbid-elements': 0, // Forbid certain elements
+		'react/forbid-elements': 0, // Forbid certain elements
 		'react/forbid-prop-types': 0, // Forbid certain propTypes
-		'forbid-foreign-prop-types': 0, // Forbid foreign propTypes
+		'react/forbid-foreign-prop-types': 0, // Forbid foreign propTypes
 		'react/no-array-index-key': 1, // Prevent using Array index in `key` props
 		'react/no-children-prop': 1, // Prevent passing children as props
 		'react/no-danger': 1, // Prevent usage of dangerous JSX properties
