@@ -58,7 +58,7 @@ module.exports = {
 		'react/sort-comp': 0, // Enforce component methods order
 		'react/sort-prop-types': 0, // Enforce propTypes declarations alphabetical sorting
 		'react/style-prop-object': 1, // Enforce style prop value being an object
-		'void-dom-elements-no-children': 1, // Prevent void DOM elements (e.g. `<img />`, `<br />`) from receiving children
+		'react/void-dom-elements-no-children': 1, // Prevent void DOM elements (e.g. `<img />`, `<br />`) from receiving children
 
 		// JSX-specific rules
 
