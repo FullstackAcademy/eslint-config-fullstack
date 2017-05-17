@@ -31,7 +31,30 @@ Note that the `eslint-config-` portion of the module name is assumed by ESLint.
 
 ### Local
 
-A specific project can extend this definition by including `eslint eslint-config-fullstack eslint-plugin-react` as saved dev-dependencies, and a local `.eslintrc.json` which `{ "extends": "fullstack" }`.
+A specific project can extend this definition by including `eslint eslint-config-fullstack eslint-plugin-react` as saved dev-dependencies, and defining a local `.eslintrc.json`. Project-level eslintrc files are recommended to be set as `root`, which prevents users' global configs from producing inconsistent results:
+
+```json
+{
+	"extends": "fullstack",
+	"root": true
+}
+```
+
+### For Babel-Transpiled Projects
+
+This config's peer dependencies (eslint, eslint-plugin-react) enable linting relatively modern files including JSX components. If you find that the linter fails to understand some early-stage ES features, you can enable parsing using Babel instead of ESLint's default parser. Install `babel-eslint` and set the `parser` option of your config:
+
+```sh
+npm install babel-eslint --save-dev
+```
+
+```json
+{
+	"parser": "babel-eslint",
+	"extends": "fullstack",
+	"root": true
+}
+```
 
 ## Extending
 
