@@ -34,11 +34,11 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "~3.19.0",
-    "eslint-plugin-react": "~6.10.3",
+    "eslint-plugin-react": "~7.0.1",
     "mocha": "^3.0.0"
   },
   "peerDependencies": {
-    "eslint": ">=3.12.1",
-    "eslint-plugin-react": ">=6.8.0"
+    "eslint": ">=3.19.0",
+    "eslint-plugin-react": ">=7.0.1"
   }
 }
