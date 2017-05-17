@@ -47,6 +47,7 @@ module.exports = {
 		'react/no-unescaped-entities': 0, // Prevent invalid characters from appearing in markup
 		'react/no-unknown-property': 1, // Prevent usage of unknown DOM property (fixable)
 		'react/no-unused-prop-types': 1, // Prevent definitions of unused prop types
+		'react/no-will-update-set-state': 2, // Prevent usage of `setState` in `componentWillUpdate`
 		'react/prefer-es6-class': 1, // Enforce ES5 or ES6 class for React Components
 		'react/prefer-stateless-function': 1, // Enforce stateless React Components to be written as a pure function
 		'react/prop-types': 0, // Prevent missing props validation in a React component definition
@@ -78,10 +79,9 @@ module.exports = {
 		'react/jsx-no-duplicate-props': 1, // Prevent duplicate props in JSX
 		'react/jsx-no-literals': 0, // Prevent usage of unwrapped JSX strings
 		'react/jsx-no-target-blank': 1, // Prevent usage of unsafe target='_blank'
-		'react/jsx-no-undef': 1, // Disallow undeclared variables in JSX
+		'react/jsx-no-undef': [1, { allowGlobals: true }], // Disallow undeclared variables in JSX
 		'react/jsx-pascal-case': 1, // Enforce PascalCase for user-defined JSX components
 		'react/jsx-sort-props': 0, // Enforce props alphabetical sorting
-		'react/jsx-space-before-closing': 0, // Validate spacing before closing bracket in JSX (fixable)
 		'react/jsx-tag-spacing': 1, // Validate whitespace in and around the JSX opening and closing brackets (fixable)
 		'react/jsx-uses-react': 1, // Prevent React to be incorrectly marked as unused
 		'react/jsx-uses-vars': 1, // Prevent variables used in JSX to be incorrectly marked as unused
