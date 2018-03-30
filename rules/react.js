@@ -25,11 +25,17 @@ module.exports = {
 
 		// general React rules
 
+		'react/boolean-prop-naming': 0, // Enforces consistent naming for boolean props
+		'react/button-has-type': 1, // Forbid "button" element without an explicit "type" attribute
+		'react/default-props-match-prop-types': 0, // Prevent extraneous defaultProps on components
+		'react/destructuring-assignment': 0, // Rule enforces consistent usage of destructuring assignment in component
 		'react/display-name': 1, // Prevent missing displayName in a React component definition
 		'react/forbid-component-props': 0, // Forbid certain props on Components
+		'react/forbid-dom-props': 0, // Forbid certain props on DOM Nodes
 		'react/forbid-elements': 0, // Forbid certain elements
 		'react/forbid-prop-types': 0, // Forbid certain propTypes
 		'react/forbid-foreign-prop-types': 0, // Forbid foreign propTypes
+		'react/no-access-state-in-setstate': 1, // Prevent using this.state inside this.setState
 		'react/no-array-index-key': 1, // Prevent using Array index in `key` props
 		'react/no-children-prop': 1, // Prevent passing children as props
 		'react/no-danger': 1, // Prevent usage of dangerous JSX properties
@@ -41,10 +47,14 @@ module.exports = {
 		'react/no-find-dom-node': 1, // Prevent usage of findDOMNode
 		'react/no-is-mounted': 1, // Prevent usage of isMounted
 		'react/no-multi-comp': [1, { ignoreStateless: true }], // Prevent multiple component definition per file
+		'react/no-redundant-should-component-update': 1, // Prevent usage of `shouldComponentUpdate` when extending React.PureComponent
 		'react/no-render-return-value': 1, // Prevent usage of the return value of React.render
 		'react/no-set-state': 0, // Prevent usage of setState
 		'react/no-string-refs': 1, // Prevent using string references in ref attribute.
+		'react/no-this-in-sfc': 1, // Prevent using `this` in stateless functional components
+		'react/no-typos': 1, // Prevent common casing typos
 		'react/no-unescaped-entities': 0, // Prevent invalid characters from appearing in markup
+		'react/no-unused-state': 1, // Prevent definitions of unused state properties
 		'react/no-unknown-property': 1, // Prevent usage of unknown DOM property (fixable)
 		'react/no-unused-prop-types': 1, // Prevent definitions of unused prop types
 		'react/no-will-update-set-state': 2, // Prevent usage of `setState` in `componentWillUpdate`
@@ -64,7 +74,10 @@ module.exports = {
 		// JSX-specific rules
 
 		'react/jsx-boolean-value': 0, // Enforce boolean attributes notation in JSX (fixable)
+		'react/jsx-child-element-spacing': 1, // Enforce or disallow spaces inside of curly braces in JSX attributes and expressions
 		'react/jsx-closing-bracket-location': 0, // Validate closing bracket location in JSX (fixable)
+		'react/jsx-closing-tag-location': 1, // Validate closing tag location in JSX (fixable)
+		'react/jsx-curly-brace-presence': [1, { props: 'never', children: 'never' }], // Enforce curly braces or disallow unnecessary curly braces in JSX
 		'react/jsx-curly-spacing': 0, // Enforce or disallow spaces inside of curly braces in JSX attributes (fixable)
 		'react/jsx-equals-spacing': 0, // Enforce or disallow spaces around equal signs in JSX attributes (fixable)
 		'react/jsx-filename-extension': 0, // Restrict file extensions that may contain JSX
@@ -73,6 +86,7 @@ module.exports = {
 		'react/jsx-indent': 0, // Validate JSX indentation (fixable)
 		'react/jsx-indent-props': 0, // Validate props indentation in JSX (fixable)
 		'react/jsx-key': 1, // Validate JSX has key prop when in array or iterator
+		'react/jsx-max-depth': [1, { max: 12 }], // Validate JSX maximum depth
 		'react/jsx-max-props-per-line': 0, // Limit maximum of props on a single line in JSX
 		'react/jsx-no-bind': 0, // Prevent usage of .bind() and arrow functions in JSX props
 		'react/jsx-no-comment-textnodes': 1, // Prevent comments from being inserted as text nodes
@@ -80,7 +94,9 @@ module.exports = {
 		'react/jsx-no-literals': 0, // Prevent usage of unwrapped JSX strings
 		'react/jsx-no-target-blank': 1, // Prevent usage of unsafe target='_blank'
 		'react/jsx-no-undef': [1, { allowGlobals: true }], // Disallow undeclared variables in JSX
+		'react/jsx-one-expression-per-line': 0, // Limit to one expression per line in JSX
 		'react/jsx-pascal-case': 1, // Enforce PascalCase for user-defined JSX components
+		'react/jsx-sort-default-props': 0, // Enforce default props alphabetical sorting
 		'react/jsx-sort-props': 0, // Enforce props alphabetical sorting
 		'react/jsx-tag-spacing': 1, // Validate whitespace in and around the JSX opening and closing brackets (fixable)
 		'react/jsx-uses-react': 1, // Prevent React to be incorrectly marked as unused
