@@ -7,6 +7,8 @@
 
 # `eslint-config-fullstack`
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/FullstackAcademy/eslint-config-fullstack.svg)](https://greenkeeper.io/)
+
 ### An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for [Fullstack Education Group](http://www.fullstackacademy.com/) Students
 
 ## Installation
