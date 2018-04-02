@@ -46,7 +46,20 @@ module.exports = {
 		'accessor-pairs': 2, // enforce getter and setter pairs in objects
 		'array-callback-return': 0, // enforce `return` statements in callbacks of array methods
 		'block-scoped-var': 0, // enforce the use of variables within the scope they are defined
-		'class-methods-use-this': 1, // enforce that class methods utilize `this`
+		'class-methods-use-this': ['error', { // enforce that class methods utilize `this` except for certain React methods
+      'exceptMethods': [
+				'render',
+				'getInitialState',
+				'getDefaultProps',
+				'componentWillMount',
+				'componentDidMount',
+				'componentWillReceiveProps',
+				'shouldComponentUpdate',
+				'componentWillUpdate',
+				'componentDidUpdate',
+				'componentWillUnmount',
+      ]
+    }],
 		'complexity': [1, {max: 8}], // enforce a maximum cyclomatic complexity allowed in a program
 		'consistent-return': 0, // require return statements to either always or never specify values
 		'curly': [1, 'multi-line', 'consistent'], // enforce consistent brace style for all control statements
