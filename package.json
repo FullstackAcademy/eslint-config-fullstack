@@ -1,8 +1,7 @@
 {
     "name": "eslint-config-fullstack",
     "version": "4.0.0",
-    "description":
-        "a complete starter ESLint config file to help students avoid errors and learn best practices",
+    "description": "a complete starter ESLint config file to help students avoid errors and learn best practices",
     "main": "index.js",
     "scripts": {
         "lint": "eslint ./ --ignore-path .gitignore",
@@ -11,8 +10,15 @@
         "test": "mocha"
     },
     "lint-staged": {
-        "*.{js}": ["prettier --write", "npm run lint-fix", "git add"],
-        "*.{json,md}": ["prettier --write", "git add"]
+        "*.{js}": [
+            "prettier --write",
+            "npm run lint-fix",
+            "git add"
+        ],
+        "*.{json,md}": [
+            "prettier --write",
+            "git add"
+        ]
     },
     "repository": {
         "type": "git",
@@ -36,12 +42,11 @@
     "author": "Gabriel Lebec <glebec@gmail.com> (https://github.com/glebec)",
     "license": "MIT",
     "bugs": {
-        "url":
-            "https://github.com/FullstackAcademy/eslint-config-fullstack/issues"
+        "url": "https://github.com/FullstackAcademy/eslint-config-fullstack/issues"
     },
-    "homepage":
-        "https://github.com/FullstackAcademy/eslint-config-fullstack#readme",
+    "homepage": "https://github.com/FullstackAcademy/eslint-config-fullstack#readme",
     "devDependencies": {
+        "babel-eslint": "^8.2.2",
         "chai": "^4.1.2",
         "eslint": "~4.19.1",
         "eslint-plugin-react": "~7.7.0",
@@ -51,9 +56,8 @@
     },
     "peerDependencies": {
         "eslint": "^4.19.1",
-        "eslint-plugin-react": "^7.7.0"
-    },
-    "dependencies": {
+        "eslint-plugin-react": "^7.7.0",
         "babel-eslint": "^8.2.2"
-    }
+    },
+    "dependencies": {}
 }
