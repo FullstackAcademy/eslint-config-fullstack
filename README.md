@@ -23,7 +23,7 @@ In your global `~/.eslintrc.json` file:
 
 ```json
 {
-  "extends": "fullstack"
+    "extends": "fullstack"
 }
 ```
 
@@ -35,26 +35,14 @@ A specific project can extend this definition by including `eslint eslint-config
 
 ```json
 {
-	"extends": "fullstack",
-	"root": true
+    "extends": "fullstack",
+    "root": true
 }
 ```
 
-### For Babel-Transpiled Projects
+### Note on Parsing
 
-This config's peer dependencies (eslint, eslint-plugin-react) enable linting relatively modern files including JSX components. If you find that the linter fails to understand some early-stage ES features, you can enable parsing using Babel instead of ESLint's default parser. Install `babel-eslint` and set the `parser` option of your config:
-
-```sh
-npm install babel-eslint --save-dev
-```
-
-```json
-{
-	"parser": "babel-eslint",
-	"extends": "fullstack",
-	"root": true
-}
-```
+This config now uses `babel-eslint` as the parser by default. This enables linting some relatively modern code which ESLint's default parser does not handle, and was necessary for this project to lint itself. You do not need to install `babel-eslint` manually as it is a dependency of this config.
 
 ## Extending
 
@@ -62,10 +50,10 @@ Any [rules](http://eslint.org/docs/rules/) added to your global or local `.eslin
 
 ```json
 {
-  "extends": "fullstack",
-  "rules": {
-    "semi": [1, "always"]
-  }
+    "extends": "fullstack",
+    "rules": {
+        "semi": [1, "always"]
+    }
 }
 ```
 
