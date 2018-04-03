@@ -31,7 +31,7 @@ Note that the `eslint-config-` portion of the module name is assumed by ESLint.
 
 ### Local
 
-A specific project can extend this definition by including `eslint eslint-config-fullstack eslint-plugin-react` as saved dev-dependencies, and defining a local `.eslintrc.json`. Project-level eslintrc files are recommended to be set as `root`, which prevents users' global configs from producing inconsistent results:
+A specific project can extend this definition by including `eslint eslint-config-fullstack eslint-plugin-react babel-eslint` as saved dev-dependencies, and defining a local `.eslintrc.json`. Project-level eslintrc files are recommended to be set as `root`, which prevents users' global configs from producing inconsistent results:
 
 ```json
 {
@@ -42,7 +42,7 @@ A specific project can extend this definition by including `eslint eslint-config
 
 ### Note on Parsing
 
-This config now uses `babel-eslint` as the parser by default. This enables linting some relatively modern code which ESLint's default parser does not handle, and was necessary for this project to lint itself. You still need to globally install `babel-eslint` manually as it is a peer dependency of this config.
+This config now uses `babel-eslint` as the parser by default. This enables linting some relatively modern code which ESLint's default parser does not handle, and was necessary for this project to lint itself. You still need to install `babel-eslint` manually as it is a peer dependency of this config.
 
 ## Extending
 
