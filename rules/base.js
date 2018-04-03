@@ -46,7 +46,7 @@ module.exports = {
 		'accessor-pairs': 2, // enforce getter and setter pairs in objects
 		'array-callback-return': 0, // enforce `return` statements in callbacks of array methods
 		'block-scoped-var': 0, // enforce the use of variables within the scope they are defined
-		'class-methods-use-this': 1, // enforce that class methods utilize `this`
+		'class-methods-use-this': 0, // enforce that class methods utilize `this`
 		'complexity': [1, {max: 8}], // enforce a maximum cyclomatic complexity allowed in a program
 		'consistent-return': 0, // require return statements to either always or never specify values
 		'curly': [1, 'multi-line', 'consistent'], // enforce consistent brace style for all control statements
@@ -185,7 +185,7 @@ module.exports = {
 		'max-statements-per-line': [1, {max: 2}], // enforce a maximum number of statements allowed per line
 		'multiline-comment-style': 0, // enforce a particular style for multiline comments
 		'multiline-ternary': 0, // enforce newlines between operands of ternary expressions
-		'new-cap': [1, {capIsNewExceptions: ['Express']}], // require constructor `function` names to begin with a capital letter
+		'new-cap': 0, // require constructor `function` names to begin with a capital letter
 		'new-parens': 0, // require parentheses when invoking a constructor with no arguments
 		'newline-per-chained-call': [1, {ignoreChainWithDepth: 3}], // require a newline after each call in a method chain
 		'no-array-constructor': 1, // disallow `Array` constructors
