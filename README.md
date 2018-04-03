@@ -16,7 +16,7 @@
 Global installation is recommended for [Fullstack Education Group](http://www.fullstackacademy.com/) students. To install or upgrade the config along with its peer dependencies:
 
 ```sh
-npm install -g eslint eslint-config-fullstack eslint-plugin-react
+npm install -g eslint eslint-config-fullstack eslint-plugin-react babel-eslint
 ```
 
 In your global `~/.eslintrc.json` file:
@@ -42,7 +42,7 @@ A specific project can extend this definition by including `eslint eslint-config
 
 ### Note on Parsing
 
-This config now uses `babel-eslint` as the parser by default. This enables linting some relatively modern code which ESLint's default parser does not handle, and was necessary for this project to lint itself. You do not need to install `babel-eslint` manually as it is a dependency of this config.
+This config now uses `babel-eslint` as the parser by default. This enables linting some relatively modern code which ESLint's default parser does not handle, and was necessary for this project to lint itself. You still need to globally install `babel-eslint` manually as it is a peer dependency of this config.
 
 ## Extending
 
