@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-fullstack",
-    "version": "4.0.0",
+    "version": "5.0.0",
     "description": "a complete starter ESLint config file to help students avoid errors and learn best practices",
     "main": "index.js",
     "scripts": {
