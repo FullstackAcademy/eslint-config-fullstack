@@ -39,8 +39,8 @@ module.exports = {
         'react/no-danger': 1, // Prevent usage of dangerous JSX properties
         'react/no-danger-with-children': 1, // Prevent problem with children and props.dangerouslySetInnerHTML
         'react/no-deprecated': 1, // Prevent usage of deprecated methods
-        'react/no-did-mount-set-state': 1, // Prevent usage of setState in componentDidMount
-        'react/no-did-update-set-state': 1, // Prevent usage of setState in componentDidUpdate
+        'react/no-did-mount-set-state': 0, // Prevent usage of setState in componentDidMount
+        'react/no-did-update-set-state': 0, // Prevent usage of setState in componentDidUpdate
         'react/no-direct-mutation-state': 2, // Prevent direct mutation of this.state
         'react/no-find-dom-node': 1, // Prevent usage of findDOMNode
         'react/no-is-mounted': 1, // Prevent usage of isMounted
