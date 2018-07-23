@@ -4,7 +4,7 @@
 
 [![Built at Fullstack Academy](https://img.shields.io/badge/built%20at-Fullstack%20Academy-green.svg)](http://www.fullstackacademy.com)
 [![npm version](https://img.shields.io/npm/v/eslint-config-fullstack.svg?maxAge=3600)](https://www.npmjs.com/package/eslint-config-fullstack)
-[![Codeship](https://img.shields.io/codeship/4ae0bfb0-1c07-0134-222f-22fb94432a98.svg)](https://codeship.com/projects/159804)
+[![Build Status](https://travis-ci.org/FullstackAcademy/eslint-config-fullstack.svg?branch=master)](https://travis-ci.org/FullstackAcademy/eslint-config-fullstack)
 [![Greenkeeper badge](https://badges.greenkeeper.io/FullstackAcademy/eslint-config-fullstack.svg)](https://greenkeeper.io/)
 
 ### An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for [Fullstack Education Group](http://www.fullstackacademy.com/) Students

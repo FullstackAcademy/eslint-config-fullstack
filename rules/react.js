@@ -39,8 +39,8 @@ module.exports = {
         'react/no-danger': 1, // Prevent usage of dangerous JSX properties
         'react/no-danger-with-children': 1, // Prevent problem with children and props.dangerouslySetInnerHTML
         'react/no-deprecated': 1, // Prevent usage of deprecated methods
-        'react/no-did-mount-set-state': 1, // Prevent usage of setState in componentDidMount
-        'react/no-did-update-set-state': 1, // Prevent usage of setState in componentDidUpdate
+        'react/no-did-mount-set-state': 0, // Prevent usage of setState in componentDidMount
+        'react/no-did-update-set-state': 0, // Prevent usage of setState in componentDidUpdate
         'react/no-direct-mutation-state': 2, // Prevent direct mutation of this.state
         'react/no-find-dom-node': 1, // Prevent usage of findDOMNode
         'react/no-is-mounted': 1, // Prevent usage of isMounted
@@ -57,7 +57,7 @@ module.exports = {
         'react/no-unused-prop-types': 1, // Prevent definitions of unused prop types
         'react/no-will-update-set-state': 2, // Prevent usage of `setState` in `componentWillUpdate`
         'react/prefer-es6-class': 1, // Enforce ES5 or ES6 class for React Components
-        'react/prefer-stateless-function': 1, // Enforce stateless React Components to be written as a pure function
+        'react/prefer-stateless-function': 0, // Enforce stateless React Components to be written as a pure function
         'react/prop-types': 0, // Prevent missing props validation in a React component definition
         'react/react-in-jsx-scope': 1, // Prevent missing React when using JSX,
         'react/require-default-props': 0, // Enforce a defaultProps definition for every prop that is not a required prop
