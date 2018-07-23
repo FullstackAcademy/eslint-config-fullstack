@@ -180,7 +180,7 @@ module.exports = {
         'func-style': 0, // enforce the consistent use of either `function` declarations or expressions
         'function-paren-newline': [1, 'consistent'], // enforce consistent line breaks inside function parentheses
         'id-blacklist': 0, // disallow specified identifiers
-        'id-length': [1, { exceptions: ['_', '$', 'i', 'j', 'k'] }], // enforce minimum and maximum identifier lengths
+        'id-length': [0, { exceptions: ['_', '$', 'i', 'j', 'k'] }], // enforce minimum and maximum identifier lengths
         'id-match': 0, // require identifiers to match a specified regular expression
         'implicit-arrow-linebreak': 0, // enforce the location of arrow function bodies
         indent: [
@@ -220,7 +220,7 @@ module.exports = {
         'no-multi-assign': 0, // disallow use of chained assignment expressions
         'no-multiple-empty-lines': [1, { max: 2, maxEOF: 1 }], // disallow multiple empty lines
         'no-negated-condition': 0, // disallow negated conditions
-        'no-nested-ternary': 1, // disallow nested ternary expressions
+        'no-nested-ternary': 0, // disallow nested ternary expressions
         'no-new-object': 0, // disallow `Object` constructors
         'no-plusplus': 0, // disallow the unary operators `++` and `--`
         'no-restricted-syntax': 0, // disallow specified syntax
