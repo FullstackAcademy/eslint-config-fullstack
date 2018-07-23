@@ -3,6 +3,11 @@ node_js:
   - node # uses most recent stable node version
 dist: trusty # uses trusty environment
 sudo: false # when on trusty, uses Docker containers for speed
+before_install:
+  - npm install -g greenkeeper-lockfile # needed to keep package-lock in sync
 install:
-  - npm i -g npm@5.7.1 # delete once 5.7.X is out of "pre-release"
-  - npm ci             # faster, goes only from package-lock
+  - case $TRAVIS_BRANCH in greenkeeper*) npm i;; *) npm ci;; esac; # use `npm i` on greenkeeper branches
+before_script:
+  - greenkeeper-lockfile-update
+after_script:
+  - greenkeeper-lockfile-upload
