@@ -6,7 +6,7 @@ sudo: false # when on trusty, uses Docker containers for speed
 before_install:
   - npm install -g greenkeeper-lockfile # needed to keep package-lock in sync
 install:
-  - case $TRAVIS_BRANCH in greenkeeper*) npm i;; *) npm ci;; esac; # use `npm i` on greenkeeper branches
+  - npm i # disable npm ci for greenkeeper's sake
 before_script:
   - greenkeeper-lockfile-update
 after_script:
