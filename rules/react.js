@@ -54,6 +54,7 @@ module.exports = {
         'react/no-unescaped-entities': 0, // Prevent invalid characters from appearing in markup
         'react/no-unused-state': 1, // Prevent definitions of unused state properties
         'react/no-unknown-property': 1, // Prevent usage of unknown DOM property (fixable)
+        'react/no-unsafe': 1, // Prevent usage of `UNSAFE_` methods
         'react/no-unused-prop-types': 1, // Prevent definitions of unused prop types
         'react/no-will-update-set-state': 2, // Prevent usage of `setState` in `componentWillUpdate`
         'react/prefer-es6-class': 1, // Enforce ES5 or ES6 class for React Components
@@ -97,6 +98,7 @@ module.exports = {
         'react/jsx-no-undef': [1, { allowGlobals: true }], // Disallow undeclared variables in JSX
         'react/jsx-one-expression-per-line': 0, // Limit to one expression per line in JSX
         'react/jsx-pascal-case': 1, // Enforce PascalCase for user-defined JSX components
+        'react/jsx-props-no-multi-spaces': 0, // Disallow multiple spaces between inline JSX props (fixable)
         'react/jsx-sort-default-props': 0, // Enforce default props alphabetical sorting
         'react/jsx-sort-props': 0, // Enforce props alphabetical sorting
         'react/jsx-tag-spacing': 1, // Validate whitespace in and around the JSX opening and closing brackets (fixable)
